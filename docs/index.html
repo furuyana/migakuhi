@@ -1,8 +1,13 @@
 // service-worker.js - ミガクヒ PWAのキャッシュ＆通知対応
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./service-worker.js');
+  }
+</script>
 
 const CACHE_NAME = "migakubi-cache-v1";
 const urlsToCache = [
-  "/",
+  "./",
   "/index.html",
   "/style.css",
   "/main.js",
