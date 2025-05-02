@@ -1,16 +1,16 @@
 // service-worker.js - ミガクヒ PWAのキャッシュ＆通知対応
 
 const CACHE_NAME = "migakubi-cache-v1";
-const urlsToCache = [
-  "/",
-  "/index.html",
-  "/style.css",
-  "/main.js",
-  "/manifest.json",
-  "/icons/icon-192.png",
-  "/icons/icon-512.png"
-];
 
+const urlsToCache = [
+  "./",
+  "./index.html",
+  "./style.css",
+  "./main.js",
+  "./manifest.json",
+  "./icons/icon-192.png",
+  "./icons/icon-512.png"
+];
 self.addEventListener("install", (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
