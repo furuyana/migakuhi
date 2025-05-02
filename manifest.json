@@ -1,0 +1,22 @@
+{
+  "name": "ミガクヒ",
+  "short_name": "ミガクヒ",
+  "description": "30日で美習慣を作るセルフケアアプリ",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#FFF9F0",
+  "theme_color": "#E8D1D1",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "./icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
