@@ -1,0 +1,12 @@
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  padding: 20px;
+  line-height: 1.6;
+}
+h1 {
+  color: #d16d84;
+}
+.checked {
+  text-decoration: line-through;
+  color: #aaa;
+}
