@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>過去の美習慣</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>30日間の美習慣アーカイブ</h1>
+  <ul id="archive-list"></ul>
+
+  <script src="tasks.js"></script>
+  <script>
+    const ul = document.getElementById("archive-list");
+    dailyTasks.forEach(day => {
+      const li = document.createElement("li");
+      li.innerHTML = `Day ${day.day}：
+        <strong>朝：</strong> ${day.morning.join(", ")} /
+        <strong>夜：</strong> ${day.night.join(", ")} /
+        <strong>特別：</strong> ${day.special.task}`;
+      ul.appendChild(li);
+    });
+  </script>
+</body>
+</html>
